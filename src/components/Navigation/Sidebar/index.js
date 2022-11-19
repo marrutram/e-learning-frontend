@@ -24,7 +24,7 @@ class Sidebar extends Component {
 
         {/* <!-- Nav Item - Dashboard --> */}
         <li className="nav-item">
-          <Link className="nav-link" to="/dashboard">
+          <Link className="nav-link" to="/home">
             <i className="fas fa-fw fa-home"></i>
             <span>Inicio</span></Link>
         </li>
@@ -70,9 +70,10 @@ class Sidebar extends Component {
           <hr className="sidebar-divider" />
           {/* <!-- Nav Item - Tables --> */}
           <li className="nav-item">
-              <a className="nav-link" href="tables.html">
+              <Link className="nav-link" to="/dashboard">
                   <i className="fas fa-fw fa-chart-pie"></i>
-                  <span>Desempeño</span></a>
+                  <span>Desempeño</span>
+              </Link>
           </li>
           {/* <!-- Divider --> */}
 
