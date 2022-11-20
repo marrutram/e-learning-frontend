@@ -6,6 +6,7 @@ import Topbar from '../../components/Navigation/Topbar';
 
 import PageHeading from '../../components/PageHeading';
 import Carousel from '../../components/Carousel'
+import CarouselProgress from "../../components/CarouselProgress";
 
 class Home extends Component {
   componentWillMount() {
@@ -32,7 +33,7 @@ class Home extends Component {
               <Topbar />
               {/* <!-- End of Topbar --> */}
 
-              {/* <!-- Begin Page Content --> */}
+
               <div className="container-fluid">
 
                 {/* <!-- Page Heading --> */}
@@ -44,8 +45,18 @@ class Home extends Component {
                 </div>
 
               </div>
-              {/* <!-- /.container-fluid --> */}
 
+              <div className="container-fluid">
+
+                {/* <!-- Page Heading --> */}
+
+                <PageHeading title="Cursos en Desarrollo" />
+
+                <div className="container-fluid">
+                  <CarouselProgress/>
+                </div>
+
+              </div>
             </div>
             {/* <!-- End of Main Content --> */}
 
