@@ -43,11 +43,12 @@ class Sidebar extends Component {
           <hr className="sidebar-divider" />
 
         {/* <!-- Nav Item - Tables --> */}
-        <li className="nav-item">
-          <a className="nav-link" href="tables.html">
-            <i className="fas fa-fw fa-file"></i>
-            <span>Mis Cursos</span></a>
-        </li>
+          <li className="nav-item">
+              <Link className="nav-link" to="/course">
+                  <i className="fas fa-fw fa-file"></i>
+                  <span>Mis Cursos</span></Link>
+          </li>
+
           {/* <!-- Divider --> */}
           <hr className="sidebar-divider" />
 
