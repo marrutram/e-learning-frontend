@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { clickMenuOpen } from '../../../redux/actions';
+import './index.scss';
 
 class Sidebar extends Component {
   render() {
@@ -13,10 +14,10 @@ class Sidebar extends Component {
 
         {/* <!-- Sidebar - Brand --> */}
         <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-          <div className="sidebar-brand-icon rotate-n-15">
-            <i className="fas fa-graduation-cap"></i>
+          <div className="sidebar-brand-icon">
+              <img className="img-profile rounded-circle" src="./img/logo_white.png" />
           </div>
-          <div className="sidebar-brand-text mx-3">E-Learning</div>
+          <div className="sidebar-brand-text mx-2">E-Learning Solutions</div>
         </a>
 
         {/* <!-- Divider --> */}

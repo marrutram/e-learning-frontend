@@ -7,7 +7,7 @@ const _items = [
         player: {
             title: 'Excel Básico',
             desc: 'Competencia a desarrollar: Aplicar herramientas de la planilla Excel nivel básico, en el procesamiento, seguridad y el análisis de datos, en el contexto laboral',
-            image: './img/excel.jpeg',
+            image: './img/powerbi.png',
             progress: 25,
         },
     },
@@ -23,7 +23,7 @@ const _items = [
         player: {
             title: 'Microsoft Teams',
             desc: 'Conoces como armar equipos de trabajo y colaborar vía chat y canales de información; en lugar de sólo correo electrónico y carpetas de archivos.',
-            image: './img/team.jpeg',
+            image: './img/powerbi.png',
             progress: 90,
         },
     },
@@ -31,7 +31,7 @@ const _items = [
         player: {
             title: 'Gestión Clima Laboral',
             desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
-            image: './img/clima.jpeg',
+            image: './img/powerbi.png',
             progress: 50,
         },
     },
@@ -39,7 +39,7 @@ const _items = [
         player: {
             title: 'Gestion Eficaz del Tiempo',
             desc: 'Desarrolla habilidades que le permitan colaborar gestión de distintas unidades de negocios. Adquirir técnicas para mejorar la productividad y rendimiento del tiempo.',
-            image: './img/time.jpeg',
+            image: './img/powerbi.png',
             progress: 80,
         },
     },

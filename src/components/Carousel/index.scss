@@ -1,6 +1,6 @@
 $slide-count: 5;
 $slide-width: 30rem;
-$blue: #4e73df;
+$yellow: #F1AD53;
 
 .carousel__wrap {
   margin-top: 10%;
@@ -75,7 +75,7 @@ $blue: #4e73df;
 
   &::after {
     align-items: center;
-    background: rgba($blue, 0.5);
+    background: rgba($yellow, 0.5) !important;
     color: white;
     content: 'Leer más';
     display: flex;
@@ -136,7 +136,10 @@ $blue: #4e73df;
 }
 
 .carousel__btn-arrow {
-  border: solid $blue;
+  border-top-color: rgb(241, 173, 83) !important;
+  border-right-color: rgb(241, 173, 83) !important;
+  border-bottom-color: rgb(241, 173, 83) !important;
+  border-left-color: rgb(241, 173, 83) !important;
   border-width: 0 0.4rem 0.4rem 0;
   height: 3rem;
   padding: 2px;
@@ -167,7 +170,7 @@ $blue: #4e73df;
     width: 2rem;
 
     &.active {
-      background: $blue;
+      background: $yellow !important;
     }
   }
 }
