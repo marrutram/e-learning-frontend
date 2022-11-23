@@ -6,11 +6,11 @@ import { globalC } from "./context";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import Dashboard from "./pages/Dashboard";
-import NotFound from "./pages/NotFound";
 import Charts from "./pages/Charts";
 import Home from "./pages/Home"
 import Course from "./pages/course";
-import CourseDetail from "./pages/course/detail";
+import CourseModule from "./pages/course/module";
+import CourseClass from "./pages/course/class";
 
 const PrivateRoute = (props) => {
     const location = useLocation();
@@ -40,9 +40,9 @@ const Routes = () => (
             <PrivateRoute exact path="/home" component={Home} />
             <PrivateRoute path="/signup" component={SignUp} />
             <PrivateRoute path="/charts" component={Charts} />
-            <PrivateRoute exact path="/course" component={Course} />
-            <PrivateRoute exact path="/course/:name/:id" component={CourseDetail} />
-
+            <PrivateRoute path="/course" component={Course} />
+            <PrivateRoute exact path="/class/:id" component={CourseClass} />
+            <PrivateRoute exact path="/module/:id" component={CourseModule} />
         </Switch>
     </BrowserRouter>
 );

@@ -17,11 +17,11 @@ class CardCollapse extends Component {
         return (
             <div className="card shadow mb-4">
                 {/* <!-- Card Header - Accordion --> */}
-                <a  href="#test-block"  className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                <a  href={`#${this.props.collapseId}`}  className="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
                     <h6 className="m-0 font-weight-bold text-primary">{this.state.title}</h6>
                 </a>
                 {/* <!-- Card Content - Collapse --> */}
-                <div className="collapse show" id="test-block">
+                <div className="collapse show" id={`${this.props.collapseId}`}>
                     <div className="card-body">
                         {this.props.children}
                   </div>

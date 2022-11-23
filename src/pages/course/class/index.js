@@ -5,11 +5,10 @@ import Topbar from "../../../components/Navigation/Topbar";
 import PageHeading from "../../../components/PageHeading";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
-const CourseDetail = () => {
+const Class = () => {
     const docs = [
         { uri: require('./docs/effective_communication/1.7 Resumen.pdf')}
     ];
-
 
     return  <div>
         <div id="wrapper">
@@ -49,4 +48,4 @@ const CourseDetail = () => {
     </div>
 };
 
-export default CourseDetail;
+export default Class;
