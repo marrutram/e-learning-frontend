@@ -7,7 +7,7 @@ const _items = [
         player: {
             title: 'Excel Básico',
             desc: 'Competencia a desarrollar: Aplicar herramientas de la planilla Excel nivel básico, en el procesamiento, seguridad y el análisis de datos, en el contexto laboral',
-            image: './img/powerbi.png',
+            image: './img/excel.png',
             progress: 25,
         },
     },
@@ -15,7 +15,7 @@ const _items = [
         player: {
             title: "Power BI",
             desc: "Obtenga más información sobre cómo tomar decisiones empresariales. Alcanzará sus objetivos rápidamente, ganará confianza y aprenderá a su propio ritmo.",
-            image: './img/powerbi.png',
+            image: './img/power_bi.png',
             progress: 10,
         },
     },
@@ -23,7 +23,7 @@ const _items = [
         player: {
             title: 'Microsoft Teams',
             desc: 'Conoces como armar equipos de trabajo y colaborar vía chat y canales de información; en lugar de sólo correo electrónico y carpetas de archivos.',
-            image: './img/powerbi.png',
+            image: './img/microsoft_team.png',
             progress: 90,
         },
     },
@@ -31,7 +31,7 @@ const _items = [
         player: {
             title: 'Gestión Clima Laboral',
             desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
-            image: './img/powerbi.png',
+            image: './img/work_climate_management.png',
             progress: 50,
         },
     },
@@ -39,7 +39,7 @@ const _items = [
         player: {
             title: 'Gestion Eficaz del Tiempo',
             desc: 'Desarrolla habilidades que le permitan colaborar gestión de distintas unidades de negocios. Adquirir técnicas para mejorar la productividad y rendimiento del tiempo.',
-            image: './img/powerbi.png',
+            image: './img/effective_time_management.png',
             progress: 80,
         },
     },

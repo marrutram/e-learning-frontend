@@ -5,34 +5,34 @@ const slideWidth = 30;
 const _items = [
     {
         player: {
-            title: 'Excel Básico',
-            module: '4 Módulos',
-            desc: 'Competencia a desarrollar: Aplicar herramientas de la planilla Excel nivel básico, en el procesamiento, seguridad y el análisis de datos, en el contexto laboral',
-            image: './img/powerbi.png',
+            title: 'Técnicas de negociación',
+            module: '3 Módulos',
+            desc: 'Competencia a desarrollar: Aplicar técnicas de negociación  basadas en los siete principios del método propuesto por la  Universidad de Harvard. \n',
+            image: './img/negotiation_techniques.png',
         },
     },
     {
         player: {
-            title: "Power BI",
-            module: '2 Módulos',
+            title: "Herramientas digitales",
+            module: '3 Módulos',
             desc: "Obtenga más información sobre cómo tomar decisiones empresariales. Alcanzará sus objetivos rápidamente, ganará confianza y aprenderá a su propio ritmo.",
-            image: './img/powerbi.png',
+            image: './img/digital_tools.png',
         },
     },
     {
         player: {
-            title: 'Microsoft Teams',
-            module: '3 Módulos',
+            title: 'Manejo y prevencion del estres',
+            module: '2 Módulos',
             desc: 'Conoces como armar equipos de trabajo y colaborar vía chat y canales de información; en lugar de sólo correo electrónico y carpetas de archivos.',
-            image: './img/powerbi.png',
+            image: './img/stress_management_prevention.png',
         },
     },
     {
         player: {
-            title: 'Gestión Clima Laboral',
-            module: '3 Módulos',
+            title: 'Presentación efectiva',
+            module: '4 Módulos',
             desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
-            image: './img/powerbi.png',
+            image: './img/effective_presentation.png',
         },
     },
     {
@@ -40,7 +40,7 @@ const _items = [
             title: 'Gestion Eficaz del Tiempo',
             module: '5 Módulos',
             desc: 'Desarrolla habilidades que le permitan colaborar gestión de distintas unidades de negocios. Adquirir técnicas para mejorar la productividad y rendimiento del tiempo.',
-            image: './img/powerbi.png',
+            image: './img/effective_time_management.png',
         },
     },
 ];
