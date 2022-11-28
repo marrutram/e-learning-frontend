@@ -6,6 +6,10 @@ import PageHeading from "../../../components/PageHeading";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 const Class = () => {
+    const docs = [
+        { uri: require('./docs/effective_communication/1.7 Resumen.pdf')}
+    ];
+
     return  <div>
         <div id="wrapper">
 
@@ -30,9 +34,11 @@ const Class = () => {
                         {/* <!-- Content Row --> */}
 
                         <div className="row">
-                            <div className="col-lg-12 scorm">
+                            <div className="col-lg-12">
                                 <iframe width="600" height="400" src={`https://bucket-courses.s3.amazonaws.com/effective_communication/scorm/scorm_one/story.html`} title="W3Schools Free Online Web Tutorials">
                                 </iframe>
+
+                                <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />;
                             </div>
                         </div>
                     </div>

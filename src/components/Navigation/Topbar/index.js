@@ -113,7 +113,7 @@ const Topbar = ({clickMenuOpen}) => {
                   </h6>
               <a className="dropdown-item d-flex align-items-center" href="e-learning-frontend/src/components/Navigation/Topbar/index#">
                 <div className="dropdown-list-image mr-3">
-                  <img className="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="" />
+                  <img className="rounded-circle"  alt="" />
                   <div className="status-indicator bg-success"></div>
                 </div>
                 <div className="font-weight-bold">

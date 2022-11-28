@@ -13,9 +13,10 @@ import CourseModule from "./pages/course/module";
 import CourseClass from "./pages/course/class";
 
 const PrivateRoute = (props) => {
+
     const location = useLocation();
     const { authLogin } = useContext(globalC);
-
+    console.log(props, authLogin)
     if (authLogin === undefined) {
         return null;
     }
@@ -41,7 +42,7 @@ const Routes = () => (
             <PrivateRoute path="/signup" component={SignUp} />
             <PrivateRoute path="/charts" component={Charts} />
             <PrivateRoute path="/course" component={Course} />
-            <PrivateRoute exact path="/class/:id" component={CourseClass} />
+            <PrivateRoute exact path="/class/:name/:id" component={CourseClass} />
             <PrivateRoute exact path="/module/:id" component={CourseModule} />
         </Switch>
     </BrowserRouter>
