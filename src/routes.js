@@ -16,7 +16,6 @@ const PrivateRoute = (props) => {
 
     const location = useLocation();
     const { authLogin } = useContext(globalC);
-    console.log(props, authLogin)
     if (authLogin === undefined) {
         return null;
     }

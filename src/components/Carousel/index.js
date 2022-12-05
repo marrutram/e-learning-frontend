@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './index.scss';
 
 const slideWidth = 30;
@@ -9,6 +10,7 @@ const _items = [
             module: '3 Módulos',
             desc: 'Competencia a desarrollar: Aplicar técnicas de negociación  basadas en los siete principios del método propuesto por la  Universidad de Harvard. \n',
             image: './img/negotiation_techniques.png',
+            to: '/module/1'
         },
     },
     {
@@ -17,6 +19,7 @@ const _items = [
             module: '3 Módulos',
             desc: "Obtenga más información sobre cómo tomar decisiones empresariales. Alcanzará sus objetivos rápidamente, ganará confianza y aprenderá a su propio ritmo.",
             image: './img/digital_tools.png',
+            to: '/module/1'
         },
     },
     {
@@ -25,6 +28,7 @@ const _items = [
             module: '2 Módulos',
             desc: 'Conoces como armar equipos de trabajo y colaborar vía chat y canales de información; en lugar de sólo correo electrónico y carpetas de archivos.',
             image: './img/stress_management_prevention.png',
+            to: '/module/1'
         },
     },
     {
@@ -33,6 +37,7 @@ const _items = [
             module: '4 Módulos',
             desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
             image: './img/effective_presentation.png',
+            to: '/module/1'
         },
     },
     {
@@ -41,6 +46,7 @@ const _items = [
             module: '5 Módulos',
             desc: 'Desarrolla habilidades que le permitan colaborar gestión de distintas unidades de negocios. Adquirir técnicas para mejorar la productividad y rendimiento del tiempo.',
             image: './img/effective_time_management.png',
+            to: '/module/1'
         },
     },
 ];
@@ -81,7 +87,9 @@ const CarouselSlideItem = ({pos, idx, activeIdx}) => {
     return (
         <li className="carousel__slide-item flex-colum " style={item.styles}>
             <div className="carousel__slide-item-img-link row">
-                <img src={item.player.image} alt={item.player.title} />
+                <Link className="nav-link" to={item.player.to}>
+                    <img src={item.player.image} alt={item.player.title} />
+                </Link>
             </div>
             <div className="flex-column carousel_body_text">
                 <div className="row">

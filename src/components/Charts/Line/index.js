@@ -11,10 +11,7 @@ class ChartLine extends Component {
     chartRef = React.createRef();
 
     componentDidMount() {
-
         const myChartRef = this.chartRef.current.getContext("2d");
-        console.log(this.chartRef);
-
         new Chart(myChartRef, {
             type: 'line',
             data: {

@@ -10,36 +10,37 @@ const CourseModule = () => {
     const item =
         {
             course: {
-                title: 'Técnicas de negociación',
-                collapseId: "negotiation_techniques",
-                desc: 'Competencia a desarrollar: Aplicar técnicas de negociación  basadas en los siete principios del método propuesto por la  Universidad de Harvard. \n',
-                image: '../img/negotiation_techniques.png',
+                title: 'Presentación efectiva',
+                collapseId: "effective_presentation",
+                module: '4 Módulos',
+                desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
+                image: '../img/effective_presentation.png',
                 progress: 10,
                 to: '/course/effective_communication/1',
                 modules: [
                     {
-                        title: 'Bienvenidad',
-                        description: 'Modulo de bienvenidad',
-                        collapseId: "negotiation_techniques",
-                        to: '/class/effective_communication/1',
-                    },
-                    {
                         title: 'Modulo I',
-                        description: 'Modulo de bienvenidad',
+                        description: 'Características y tipos de reuniones',
                         collapseId: "negotiation_techniques",
                         to: '/class/effective_communication/1',
                     },
                     {
-                        title: 'Modulo 2',
-                        description: 'Modulo de bienvenidad',
+                        title: 'Módulo II',
+                        description: 'Desarrollando una reunión efectiva',
                         collapseId: "negotiation_techniques",
-                        to: '/class/effective_communication/1',
+                        to: '/class/effective_communication/2',
                     },
                     {
-                        title: 'Modulo 3',
-                        description: 'Modulo de bienvenidad',
+                        title: 'Módulo III',
+                        description: '¿Cómo hacer una presentación?',
                         collapseId: "negotiation_techniques",
-                        to: '/class/effective_communication/1',
+                        to: '/class/effective_communication/3',
+                    },
+                    {
+                        title: 'Módulo IV',
+                        description: 'Técnicas claves para una presentación efectiva',
+                        collapseId: "negotiation_techniques",
+                        to: '/class/effective_communication/4',
                     }
                 ]
             },
@@ -69,7 +70,7 @@ const CourseModule = () => {
                                 {/* <!-- Content Row --> */}
 
                                 <div className="container-fluid">
-                                    <div className="row ml-0">
+                                    <div className="row ml-3">
                                         <div className="col-lg-4">
                                             <div className="carousel__slide-item-img-link row" >
                                                 <img src={item.course.image} alt={item.course.title} />

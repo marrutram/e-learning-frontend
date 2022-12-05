@@ -3,9 +3,27 @@ import './index.scss';
 import Sidebar from "../../../components/Navigation/Sidebar";
 import Topbar from "../../../components/Navigation/Topbar";
 import PageHeading from "../../../components/PageHeading";
-import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
-const Class = () => {
+export default function Class() {
+    const item =
+        {
+            effective_communication: {
+                1: {
+                    url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_1/story.html"
+                },
+                2: {
+                    url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_2/story.html"
+                },
+                3: {
+                    url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_3/story.html"
+                },
+                4: {
+                    url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_3/story.html"
+                }
+            },
+        };
+    const path = window.location.href.split('/')
+    const currentClass = item[path[4]][path[5]];
     return  <div>
         <div id="wrapper">
 
@@ -31,7 +49,7 @@ const Class = () => {
 
                         <div className="row">
                             <div className="col-lg-12 scorm">
-                                <iframe width="600" height="400" src={`https://bucket-courses.s3.amazonaws.com/effective_communication/scorm/scorm_one/story.html`} title="W3Schools Free Online Web Tutorials">
+                                <iframe width="700" height="400" src={currentClass.url} title="W3Schools Free Online Web Tutorials">
                                 </iframe>
                             </div>
                         </div>
@@ -41,5 +59,3 @@ const Class = () => {
         </div>
     </div>
 };
-
-export default Class;

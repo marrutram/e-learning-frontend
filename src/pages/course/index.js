@@ -10,6 +10,17 @@ import Topbar from '../../components/Navigation/Topbar';
 const items = [
     {
         course: {
+            title: 'Presentación efectiva',
+            collapseId: "effective_presentation",
+            module: '4 Módulos',
+            desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
+            image: './img/effective_presentation.png',
+            progress: 10,
+            to: '/module/1'
+        },
+    },
+    {
+        course: {
             title: 'Técnicas de negociación',
             collapseId: "negotiation_techniques",
             module: '3 Módulos',
@@ -38,17 +49,6 @@ const items = [
             desc: 'Conoces como armar equipos de trabajo y colaborar vía chat y canales de información; en lugar de sólo correo electrónico y carpetas de archivos.',
             image: './img/stress_management_prevention.png',
             progress: 50,
-            to: '/module/1'
-        },
-    },
-    {
-        course: {
-            title: 'Presentación efectiva',
-            collapseId: "effective_presentation",
-            module: '4 Módulos',
-            desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
-            image: './img/effective_presentation.png',
-            progress: 10,
             to: '/module/1'
         },
     },

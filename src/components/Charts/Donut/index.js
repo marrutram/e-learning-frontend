@@ -7,9 +7,7 @@ class ChartDonut extends Component {
     chartRef = React.createRef();
 
     componentDidMount() {
-
         const myPieChart = this.chartRef.current.getContext("2d");
-        console.log(this.chartRef);
 
         new Chart(myPieChart, {
             type: 'doughnut',

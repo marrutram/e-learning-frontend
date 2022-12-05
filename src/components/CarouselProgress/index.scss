@@ -75,7 +75,7 @@ $blue: #4e73df;
 
   &::after {
     align-items: center;
-    background: rgba($blue, 0.5);
+    background: rgba($blue, 0.5)  !important;
     color: white;
     content: 'Leer más';
     display: flex;

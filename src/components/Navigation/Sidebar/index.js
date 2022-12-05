@@ -15,7 +15,7 @@ class Sidebar extends Component {
         {/* <!-- Sidebar - Brand --> */}
         <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
           <div className="sidebar-brand-icon">
-              <img className="img-profile rounded-circle" src="./img/logo_white.png" />
+              <img className="img-profile rounded-circle" src="../../img/logo_white.png" />
           </div>
           <div className="sidebar-brand-text mx-2">E-Learning Solutions</div>
         </a>
