@@ -12,11 +12,11 @@ class ChartDonut extends Component {
         new Chart(myPieChart, {
             type: 'doughnut',
             data: {
-                labels: ["Direct", "Referral", "Social"],
+                labels: ["Alta", "Media", "Baja"],
                 datasets: [{
-                    data: [55, 30, 15],
-                    backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-                    hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+                    data: [100, 30, 15],
+                    backgroundColor: ['#1cc88a', '#ffa304', '#ec0000'],
+                    hoverBackgroundColor: ['#1cc88a', '#ffa304', '#ec0000'],
                     hoverBorderColor: "rgba(234, 236, 244, 1)",
                 }],
             },
@@ -42,12 +42,12 @@ class ChartDonut extends Component {
 
     render() {
         return (
-            <CardBasic title="Donut Chart">
+            <CardBasic title="Promedio Notas">
                  <div className="chart-pie pt-4">
                         <canvas id="myPieChart" ref={this.chartRef}></canvas>
                     </div>
                     <hr />
-                    Styling for the donut chart can be found in the <code>/Components/Charts/Donut/index.js</code> file.
+                    Se puede observar promedio notas.
             </CardBasic>
         )
     }

@@ -15,7 +15,7 @@ class ChartLine extends Component {
         new Chart(myChartRef, {
             type: 'line',
             data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                labels: ["Lunes", "Martes", "Miercoles", "Jueves", "Vieres", "Sabado", "Domingo"],
                 datasets: [{
                     label: "Earnings",
                     lineTension: 0.3,
@@ -29,7 +29,7 @@ class ChartLine extends Component {
                     pointHoverBorderColor: "rgba(78, 115, 223, 1)",
                     pointHitRadius: 10,
                     pointBorderWidth: 2,
-                    data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
+                    data: [400, 300, 200, 450, 250, 30, 40],
                 }],
             },
             options: {
@@ -100,12 +100,12 @@ class ChartLine extends Component {
 
     render() {
         return (
-            <CardBasic title="Area Chart">
+            <CardBasic title="Dias de Conectividad">
                 <div className="chart-area">
                     <canvas id="myAreaChart" ref={this.chartRef}></canvas>
                 </div>
                 <hr />
-                Styling for the area chart can be found in the <code>/Components/Charts/Line/Index.js</code> file.
+                Se puede observar los días de conectivida.
             </CardBasic>
         )
     }

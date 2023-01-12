@@ -43,25 +43,25 @@ class Dashboard extends Component {
 
                 {/* <!-- Content Row --> */}
                 <div className="row">
-                  <CardInfo title="Earnings (Monthly)"
+                  <CardInfo title="Cantidad Participantes"
                     icon="calendar"
                     color="primary"
-                    value="$40,000" />
+                    value="500" />
 
-                  <CardInfo title="Earnings (Annual)"
+                  <CardInfo title="Finalizados"
                     icon="calendar"
                     color="success"
-                    value="215,000" />
+                    value="70%" />
 
-                  <CardInfo title="Tasks"
+                  <CardInfo title="En Progreso"
                     icon="clipboard"
                     color="info"
-                    value="50%" />
+                    value="20%" />
 
-                  <CardInfo title="Pending Requests"
+                  <CardInfo title="Sin Ingreso"
                     icon="comments"
                     color="warning"
-                    value="18" />
+                    value="10%" />
                 </div>
                 <div className="row">
                   <div className="col-xl-8 col-lg-6">
@@ -83,7 +83,7 @@ class Dashboard extends Component {
             <footer className="sticky-footer bg-white">
               <div className="container my-auto">
                 <div className="copyright text-center my-auto">
-                  <span>Copyright &copy; Your Website 2019</span>
+                  <span></span>
                 </div>
               </div>
             </footer>
