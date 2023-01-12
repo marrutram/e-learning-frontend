@@ -45,7 +45,7 @@ class Sidebar extends Component {
 
         {/* <!-- Nav Item - Tables --> */}
           <li className="nav-item">
-              <Link className="nav-link" to="/course">
+              <Link className="nav-link" to="/courses">
                   <i className="fas fa-fw fa-file"></i>
                   <span>Mis Cursos</span></Link>
           </li>

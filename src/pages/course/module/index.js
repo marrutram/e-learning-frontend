@@ -16,7 +16,7 @@ const CourseModule = () => {
                 desc: 'Herramientas necesarias para la administración de un grato clima organizacional, logrando desarrollar herramientas prácticas para la administración de conflictos y desarrollar. ',
                 image: '../img/effective_presentation.png',
                 progress: 10,
-                to: '/course/effective_communication/1',
+                to: '/class/course/1/effective_communication/1',
                 modules: [
                     {
                         title: 'Modulo I',
@@ -28,19 +28,19 @@ const CourseModule = () => {
                         title: 'Módulo II',
                         description: 'Desarrollando una reunión efectiva',
                         collapseId: "negotiation_techniques",
-                        to: '/document/class/effective_communication/2',
+                        to: '/1/document/class/effective_communication/2',
                     },
                     {
                         title: 'Módulo III',
                         description: '¿Cómo hacer una presentación?',
                         collapseId: "negotiation_techniques",
-                        to: '/document/class/effective_communication/3',
+                        to: '/1/document/class/effective_communication/3',
                     },
                     {
                         title: 'Módulo IV',
                         description: 'Técnicas claves para una presentación efectiva',
                         collapseId: "negotiation_techniques",
-                        to: '/document/class/effective_communication/4',
+                        to: '/1/document/class/effective_communication/4',
                     }
                 ]
             },
@@ -53,13 +53,13 @@ const CourseModule = () => {
                 desc: "Obtenga más información sobre cómo tomar decisiones empresariales. Alcanzará sus objetivos rápidamente, ganará confianza y aprenderá a su propio ritmo.",
                 image: '../img/digital_tools.png',
                 progress: 50,
-                to: '/course/digital_tools/1',
+                to: '/class/course/2/digital_tools/1',
                 modules: [
                     {
                         title: 'Modulo I',
                         description: 'Mis Herramientas',
                         collapseId: "digital_tools",
-                        to: '/class/digital_tools/1',
+                        to: '/class/course/2/digital_tools/1',
                         download: [
                             {
                                 icon: "fas fa-play fa-fw",
@@ -69,22 +69,22 @@ const CourseModule = () => {
                             {
                                 icon: "fas fa-book fa-fw",
                                 title: 'Resumen temático',
-                                to: '/document/digital_tools/thematic_summary/thematic_summary1.pdf',
+                                to: '/document/course/2/digital_tools/thematic_summary/thematic_summary_1.pdf',
                             },
                             {
                                 icon: "fas fa-map fa-fw",
                                 title: 'Glosario',
-                                to: '/document/digital_tools/glossary/glossary_1.pdf',
+                                to: '/document/course/2/digital_tools/glossary/glossary_1.pdf',
                             },
                             {
                                 icon: "fas fa-clipboard fa-fw",
                                 title: 'Casos práctico',
-                                to: '/document/digital_tools/practical_cases/practical_cases_1.docx',
+                                to: '/document/course/2/digital_tools/practical_cases/practical_cases_1.docx',
                             },
                             {
                                 icon: "fas fa-pen fa-fw",
                                 title: 'Evaluacion de módulo',
-                                to: '/document/digital_tools/module_evaluation/module_evaluation_1.docx',
+                                to: '/document/course/2/digital_tools/module_evaluation/module_evaluation_1.docx',
                             }
                         ],
                     },
@@ -92,7 +92,7 @@ const CourseModule = () => {
                         title: 'Módulo II',
                         description: 'Problemas Frecuentes de conexión',
                         collapseId: "digital_tools",
-                        to: '/class/digital_tools/2',
+                        to: '/class/course/2/digital_tools/2',
                         download: [
                             {
                                 icon: "fas fa-play fa-fw",
@@ -102,22 +102,22 @@ const CourseModule = () => {
                             {
                                 icon: "fas fa-book fa-fw",
                                 title: 'Resumen temático',
-                                to: '/document/digital_tools/thematic_summary/thematic_summary_1.pdf',
+                                to: '/document/course/2/digital_tools/thematic_summary/thematic_summary_2.pdf',
                             },
                             {
                                 icon: "fas fa-map fa-fw",
                                 title: 'Glosario',
-                                to: '/document/digital_tools/glossary/glossary_1.pdf',
+                                to: '/document/course/2/digital_tools/glossary/glossary_2.pdf',
                             },
                             {
                                 icon: "fas fa-clipboard fa-fw",
                                 title: 'Casos práctico',
-                                to: '/document/digital_tools/practical_cases/practical_cases_1.docx',
+                                to: '/document/course/2/digital_tools/practical_cases/practical_cases_2.docx',
                             },
                             {
                                 icon: "fas fa-pen fa-fw",
                                 title: 'Evaluacion de módulo',
-                                to: '/document/digital_tools/module_evaluation/module_evaluation_1.docx',
+                                to: '/document/course/2/digital_tools/module_evaluation/module_evaluation_2.docx',
                             }
                         ],
                     },
@@ -125,7 +125,7 @@ const CourseModule = () => {
                         title: 'Módulo III',
                         description: 'Manos a la Obra',
                         collapseId: "digital_tools",
-                        to: '/class/digital_tools/3',
+                        to: '/class/course/2/digital_tools/3',
                         download: [
                             {
                                 icon: "fas fa-play fa-fw",
@@ -135,22 +135,22 @@ const CourseModule = () => {
                             {
                                 icon: "fas fa-book fa-fw",
                                 title: 'Resumen temático',
-                                to: '/document/digital_tools/thematic_summary/thematic_summary_1.pdf',
+                                to: '/document/course/2/digital_tools/thematic_summary/thematic_summary_3.pdf',
                             },
                             {
                                 icon: "fas fa-map fa-fw",
                                 title: 'Glosario',
-                                to: '/document/digital_tools/glossary/glossary_1.pdf',
+                                to: '/document/course/2/digital_tools/glossary/glossary_3.pdf',
                             },
                             {
                                 icon: "fas fa-clipboard fa-fw",
                                 title: 'Casos práctico',
-                                to: '/document/digital_tools/practical_cases/practical_cases_1.docx',
+                                to: '/document/course/2/digital_tools/practical_cases/practical_cases_3.docx',
                             },
                             {
                                 icon: "fas fa-pen fa-fw",
                                 title: 'Evaluacion de módulo',
-                                to: '/document/digital_tools/module_evaluation/module_evaluation_1.docx',
+                                to: '/document/course/2/digital_tools/module_evaluation/module_evaluation_3.docx',
                             }
                         ],
                     }

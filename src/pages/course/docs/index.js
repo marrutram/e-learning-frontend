@@ -1,16 +1,21 @@
 import React from 'react';
 import './index.scss';
+import {Link} from 'react-router-dom';
 import Sidebar from "../../../components/Navigation/Sidebar";
 import Topbar from "../../../components/Navigation/Topbar";
 import PageHeading from "../../../components/PageHeading";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 const ViewDoc = () => {
-    const url = "https://bucket-courses.s3.amazonaws.com/course/digital_tools/glossary/glossary_1.pdf"
+    const path = window.location.href.split('/')
+    const pathUrl = path[6] + "/" + path[7] + "/" +  path[8];
+    const url = "https://bucket-courses.s3.amazonaws.com/course/" + pathUrl;
+    const title = path[8]
     const docs = [
         { uri: url}
     ];
-
+    const numberModulo = path[5];
+    const to = "/course/" + numberModulo;
     return  <div>
         <div id="wrapper">
 
@@ -30,13 +35,21 @@ const ViewDoc = () => {
 
                         {/* <!-- Page Heading --> */}
 
-                        <PageHeading title="Mis Cursos" />
+                        <PageHeading title="Mis Documentos" />
 
-                        {/* <!-- Content Row --> */}
-
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />;
+                        <div className="card shadow mb-4">
+                            <div className="card-header py-3 doc-card-header">
+                                    <Link className="btn btn-primary" to={to}>
+                                        <i className="fas fa-arrow-left fa-sm"></i>
+                                    </Link>
+                                    <h6 className="m-0 font-weight-bold text-primary doc-title">
+                                        {title}
+                                    </h6>
+                            </div>
+                            <div className="card-body">
+                                <div className="col-lg-12">
+                                    <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import './index.scss';
 import Sidebar from "../../../components/Navigation/Sidebar";
 import Topbar from "../../../components/Navigation/Topbar";
 import PageHeading from "../../../components/PageHeading";
+import {Link} from "react-router-dom";
 
 export default function Class() {
     const item =
@@ -48,7 +49,9 @@ export default function Class() {
             },
         };
     const path = window.location.href.split('/')
-    const currentClass = item[path[4]][path[5]];
+    const currentClass = item[path[6]][path[7]];
+    const numberModulo = path[5];
+    const to = "/course/" + numberModulo;
     return  <div>
         <div id="wrapper">
 
@@ -71,8 +74,11 @@ export default function Class() {
                         <PageHeading title="Mis Cursos" />
 
                         <div className="card shadow mb-4">
-                            <div className="card-header py-3">
-                                <h6 className="m-0 font-weight-bold text-primary">{currentClass.title}: {currentClass.description}</h6>
+                            <div className="card-header py-3 class-card-header">
+                                <Link className="btn btn-primary" to={to}>
+                                    <i className="fas fa-arrow-left fa-sm"></i>
+                                </Link>
+                                <h6 className="m-0 font-weight-bold text-primary class-title">{currentClass.title}: {currentClass.description}</h6>
                             </div>
                             <div className="card-body">
                                 <div className="col-lg-12 scorm">

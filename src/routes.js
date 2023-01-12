@@ -41,10 +41,10 @@ const Routes = () => (
             <PrivateRoute exact path="/home" component={Home} />
             <PrivateRoute path="/signup" component={SignUp} />
             <PrivateRoute path="/charts" component={Charts} />
-            <PrivateRoute path="/course" component={Course} />
-            <PrivateRoute exact path="/class/:name/:id" component={CourseClass} />
-            <PrivateRoute exact path="/module/:id" component={CourseModule} />
-            <PrivateRoute exact path="/document/:module/:type/:name" component={ViewDoc} />
+            <PrivateRoute path="/courses" component={Course} />
+            <PrivateRoute exact path="/class/course/:id/:name/:id" component={CourseClass} />
+            <PrivateRoute exact path="/course/:id" component={CourseModule} />
+            <PrivateRoute exact path="/document/course/:id/:module/:type/:name" component={ViewDoc} />
         </Switch>
     </BrowserRouter>
 );
