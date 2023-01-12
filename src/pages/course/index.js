@@ -38,7 +38,7 @@ const items = [
             desc: "Obtenga más información sobre cómo tomar decisiones empresariales. Alcanzará sus objetivos rápidamente, ganará confianza y aprenderá a su propio ritmo.",
             image: './img/digital_tools.png',
             progress: 30,
-            to: '/module/1'
+            to: '/module/2'
         },
     },
     {

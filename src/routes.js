@@ -11,6 +11,7 @@ import Home from "./pages/Home"
 import Course from "./pages/course";
 import CourseModule from "./pages/course/module";
 import CourseClass from "./pages/course/class";
+import ViewDoc from "./pages/course/docs";
 
 const PrivateRoute = (props) => {
 
@@ -43,6 +44,7 @@ const Routes = () => (
             <PrivateRoute path="/course" component={Course} />
             <PrivateRoute exact path="/class/:name/:id" component={CourseClass} />
             <PrivateRoute exact path="/module/:id" component={CourseModule} />
+            <PrivateRoute exact path="/document/:module/:type/:name" component={ViewDoc} />
         </Switch>
     </BrowserRouter>
 );

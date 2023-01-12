@@ -19,7 +19,7 @@ const _items = [
             module: '3 Módulos',
             desc: "Obtenga más información sobre cómo tomar decisiones empresariales. Alcanzará sus objetivos rápidamente, ganará confianza y aprenderá a su propio ritmo.",
             image: './img/digital_tools.png',
-            to: '/module/1'
+            to: '/module/2'
         },
     },
     {

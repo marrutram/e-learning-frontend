@@ -7,8 +7,8 @@ import CardCollapse from "../../../components/Cards/Collapse";
 import './index.scss';
 
 const CourseModule = () => {
-    const item =
-        {
+    const collection = {
+        1: {
             course: {
                 title: 'Presentación efectiva',
                 collapseId: "effective_presentation",
@@ -22,29 +22,143 @@ const CourseModule = () => {
                         title: 'Modulo I',
                         description: 'Características y tipos de reuniones',
                         collapseId: "negotiation_techniques",
-                        to: '/class/effective_communication/1',
+                        to: '/document/class/effective_communication/1',
                     },
                     {
                         title: 'Módulo II',
                         description: 'Desarrollando una reunión efectiva',
                         collapseId: "negotiation_techniques",
-                        to: '/class/effective_communication/2',
+                        to: '/document/class/effective_communication/2',
                     },
                     {
                         title: 'Módulo III',
                         description: '¿Cómo hacer una presentación?',
                         collapseId: "negotiation_techniques",
-                        to: '/class/effective_communication/3',
+                        to: '/document/class/effective_communication/3',
                     },
                     {
                         title: 'Módulo IV',
                         description: 'Técnicas claves para una presentación efectiva',
                         collapseId: "negotiation_techniques",
-                        to: '/class/effective_communication/4',
+                        to: '/document/class/effective_communication/4',
                     }
                 ]
             },
-        };
+        },
+        2: {
+            course: {
+                title: 'Herramientas digitales',
+                collapseId: "digital_tools",
+                module: '3 Módulos',
+                desc: "Obtenga más información sobre cómo tomar decisiones empresariales. Alcanzará sus objetivos rápidamente, ganará confianza y aprenderá a su propio ritmo.",
+                image: '../img/digital_tools.png',
+                progress: 50,
+                to: '/course/digital_tools/1',
+                modules: [
+                    {
+                        title: 'Modulo I',
+                        description: 'Mis Herramientas',
+                        collapseId: "digital_tools",
+                        to: '/class/digital_tools/1',
+                        download: [
+                            {
+                                icon: "fas fa-play fa-fw",
+                                title: 'Infografía',
+                                to: null,
+                            },
+                            {
+                                icon: "fas fa-book fa-fw",
+                                title: 'Resumen temático',
+                                to: '/document/digital_tools/thematic_summary/thematic_summary1.pdf',
+                            },
+                            {
+                                icon: "fas fa-map fa-fw",
+                                title: 'Glosario',
+                                to: '/document/digital_tools/glossary/glossary_1.pdf',
+                            },
+                            {
+                                icon: "fas fa-clipboard fa-fw",
+                                title: 'Casos práctico',
+                                to: '/document/digital_tools/practical_cases/practical_cases_1.docx',
+                            },
+                            {
+                                icon: "fas fa-pen fa-fw",
+                                title: 'Evaluacion de módulo',
+                                to: '/document/digital_tools/module_evaluation/module_evaluation_1.docx',
+                            }
+                        ],
+                    },
+                    {
+                        title: 'Módulo II',
+                        description: 'Problemas Frecuentes de conexión',
+                        collapseId: "digital_tools",
+                        to: '/class/digital_tools/2',
+                        download: [
+                            {
+                                icon: "fas fa-play fa-fw",
+                                title: 'Infografía',
+                                to: null,
+                            },
+                            {
+                                icon: "fas fa-book fa-fw",
+                                title: 'Resumen temático',
+                                to: '/document/digital_tools/thematic_summary/thematic_summary_1.pdf',
+                            },
+                            {
+                                icon: "fas fa-map fa-fw",
+                                title: 'Glosario',
+                                to: '/document/digital_tools/glossary/glossary_1.pdf',
+                            },
+                            {
+                                icon: "fas fa-clipboard fa-fw",
+                                title: 'Casos práctico',
+                                to: '/document/digital_tools/practical_cases/practical_cases_1.docx',
+                            },
+                            {
+                                icon: "fas fa-pen fa-fw",
+                                title: 'Evaluacion de módulo',
+                                to: '/document/digital_tools/module_evaluation/module_evaluation_1.docx',
+                            }
+                        ],
+                    },
+                    {
+                        title: 'Módulo III',
+                        description: 'Manos a la Obra',
+                        collapseId: "digital_tools",
+                        to: '/class/digital_tools/3',
+                        download: [
+                            {
+                                icon: "fas fa-play fa-fw",
+                                title: 'Infografía',
+                                to: null,
+                            },
+                            {
+                                icon: "fas fa-book fa-fw",
+                                title: 'Resumen temático',
+                                to: '/document/digital_tools/thematic_summary/thematic_summary_1.pdf',
+                            },
+                            {
+                                icon: "fas fa-map fa-fw",
+                                title: 'Glosario',
+                                to: '/document/digital_tools/glossary/glossary_1.pdf',
+                            },
+                            {
+                                icon: "fas fa-clipboard fa-fw",
+                                title: 'Casos práctico',
+                                to: '/document/digital_tools/practical_cases/practical_cases_1.docx',
+                            },
+                            {
+                                icon: "fas fa-pen fa-fw",
+                                title: 'Evaluacion de módulo',
+                                to: '/document/digital_tools/module_evaluation/module_evaluation_1.docx',
+                            }
+                        ],
+                    }
+                ]
+            },
+        }};
+        const path = window.location.href.split('/')
+        const item = collection[path[4]];
         return (
             <div>
                 <div id="wrapper">
@@ -94,9 +208,9 @@ const CourseModule = () => {
                                     </div>
 
                                     {item.course.modules.map((pos, i) => (
-                                        <div className="col-lg-12" key={"module_"+i}>
-                                            <CardCollapse title={pos.title} collapseId={pos.collapseId+i}>
-                                                <Link className="row" to={pos.to}>
+                                         <div className="col-lg-12" key={"module_"+i}>
+                                            <CardCollapse title={pos.title + ": " + pos.description} collapseId={pos.collapseId+i}>
+                                                <Link className="row mb-1" to={pos.to}>
                                                     <div className="col-2">
                                                         <i className="fas fa-play fa-fw "></i>
                                                     </div>
@@ -104,6 +218,16 @@ const CourseModule = () => {
                                                         <p>{pos.description}</p>
                                                     </div>
                                                 </Link>
+                                                {pos.download.map((item, i) => item.to && (
+                                                <Link className="row mb-1" to={item.to}>
+                                                    <div className="col-2">
+                                                        <i className={item.icon} ></i>
+                                                    </div>
+                                                    <div className="col-10">
+                                                        <p>{item.title}</p>
+                                                    </div>
+                                                    </Link>
+                                                ))}
                                             </CardCollapse>
                                         </div>
                                     ))}

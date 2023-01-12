@@ -9,16 +9,41 @@ export default function Class() {
         {
             effective_communication: {
                 1: {
+                    title: 'Modulo I',
+                    description: 'Características y tipos de reuniones',
                     url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_1/story.html"
                 },
                 2: {
+                    title: 'Módulo II',
+                    description: 'Desarrollando una reunión efectiva',
                     url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_2/story.html"
                 },
                 3: {
+                    title: 'Módulo III',
+                    description: '¿Cómo hacer una presentación?',
                     url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_3/story.html"
                 },
                 4: {
+                    title: 'Módulo IV',
+                    description: 'Técnicas claves para una presentación efectiva',
                     url: "https://bucket-courses.s3.amazonaws.com/course/effective_presentation/scorm/scorm_3/story.html"
+                }
+            },
+            digital_tools: {
+                1: {
+                    title: 'Modulo I',
+                    description: 'Mis Herramientas',
+                    url: "https://bucket-courses.s3.amazonaws.com/course/digital_tools/scorm/scorm_1/story.html"
+                },
+                2: {
+                    title: 'Módulo II',
+                    description: 'Problemas Frecuentes de conexión',
+                    url: "https://bucket-courses.s3.amazonaws.com/course/digital_tools/scorm/scorm_2/story.html"
+                },
+                3: {
+                    title: 'Módulo III',
+                    description: 'Manos a la Obra',
+                    url: "https://bucket-courses.s3.amazonaws.com/course/digital_tools/scorm/scorm_3/story.html"
                 }
             },
         };
@@ -45,12 +70,15 @@ export default function Class() {
 
                         <PageHeading title="Mis Cursos" />
 
-                        {/* <!-- Content Row --> */}
-
-                        <div className="row">
-                            <div className="col-lg-12 scorm">
-                                <iframe width="700" height="400" src={currentClass.url} title="W3Schools Free Online Web Tutorials">
-                                </iframe>
+                        <div className="card shadow mb-4">
+                            <div className="card-header py-3">
+                                <h6 className="m-0 font-weight-bold text-primary">{currentClass.title}: {currentClass.description}</h6>
+                            </div>
+                            <div className="card-body">
+                                <div className="col-lg-12 scorm">
+                                    <iframe width="700" height="400" src={currentClass.url} title="W3Schools Free Online Web Tutorials">
+                                    </iframe>
+                                </div>
                             </div>
                         </div>
                     </div>

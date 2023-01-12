@@ -5,9 +5,10 @@ import Topbar from "../../../components/Navigation/Topbar";
 import PageHeading from "../../../components/PageHeading";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
-const Class = () => {
+const ViewDoc = () => {
+    const url = "https://bucket-courses.s3.amazonaws.com/course/digital_tools/glossary/glossary_1.pdf"
     const docs = [
-        { uri: require('./docs/effective_communication/1.7 Resumen.pdf')}
+        { uri: url}
     ];
 
     return  <div>
@@ -35,9 +36,6 @@ const Class = () => {
 
                         <div className="row">
                             <div className="col-lg-12">
-                                <iframe width="600" height="400" src={`https://bucket-courses.s3.amazonaws.com/effective_communication/scorm/scorm_one/story.html`} title="W3Schools Free Online Web Tutorials">
-                                </iframe>
-
                                 <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />;
                             </div>
                         </div>
@@ -48,4 +46,4 @@ const Class = () => {
     </div>
 };
 
-export default Class;
+export default ViewDoc;
